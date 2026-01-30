@@ -3,7 +3,9 @@ from tkinter import *
 class Gui:
     def __init__(self):
         self.window = Tk()
-        self.window.title("PYSQL VERSÃO 1.0")
+        self.window.title("Sistema de cadastro")
+        self.window.minsize(270, 300)
+        self.window.maxsize(1280, 1020)
 
         x_pad = 5
         y_pad = 3
@@ -16,7 +18,7 @@ class Gui:
         self.txtCPF = StringVar(self.window)
 
         # widgets
-        self.lblnome = Label(self.window, text="Nome")
+        self.lblnome = Label(self.window, text="Nome" )
         self.lblsobrenome = Label(self.window, text="Sobrenome")
         self.lblemail = Label(self.window, text="Email")
         self.lblcpf = Label(self.window, text="CPF")
